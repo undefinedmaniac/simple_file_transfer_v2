@@ -1,0 +1,16 @@
+[package]
+name = "simple_file_transfer_v2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.70"
+async-trait = "0.1.68"
+rand = { version = "0.8.5", features = ["small_rng"] }
+rmp-serde = "1.1.1"
+serde = { version = "1.0.160", features = ["derive"] }
+thiserror = "1.0.40"
+time = { version = "0.3.20", features = ["local-offset", "formatting", "serde"] }
+tokio = { version = "1.27.0", features = ["net", "macros", "rt", "io-util", "rt-multi-thread", "signal", "sync", "fs"] }
